@@ -105,7 +105,7 @@ hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
 hdfs dfs -cat a1/output1/part-00000
 ```
 
-![1633523400047](pic\1.png)
+![1633523400047](pic/1.png)
 
 ##### b. Step2 - Count the common followees and find the maximum
 
@@ -219,7 +219,7 @@ blogID recommendedBlogID #commonBlogs
 hdfs dfs -cat a2/output2/part-00000
 ```
 
-![1633572629850](pic\2.png)
+![1633572629850](pic/2.png)
 
 #### 2.Homework1_b
 
@@ -352,7 +352,7 @@ hdfs dfs -ls b1/output3
 hdfs dfs -cat b1/output3/part-00001
 ```
 
-![1633588833256](pic\3.png)
+![1633588833256](pic/3.png)
 
 ##### d. Sort and find the Top-K result
 
@@ -367,7 +367,7 @@ cat ./output3/output3_all |sort -n -k1 -k4r > ./output3/output3_all_sort
 hdfs dfs -copyFromLocal hw1/hw1_b/output3/output3_all_sort ./b1
 ```
 
-![1633589354901](pic\4.png)
+![1633589354901](pic/4.png)
 
 ###### Use the following python script to limit the Top-K (K = 3)
 
@@ -411,7 +411,7 @@ for line in sys.stdin:
 
 ###### Output_b
 
-![1633592535977](pic\5.png)
+![1633592535977](pic/5.png)
 
 #### 3.Homework1_c
 
@@ -470,7 +470,7 @@ for i in range(len(dataset)):
 
 The result of mapper_c0.py is shown as follow:
 
-![1633656050219](pic\6.png)
+![1633656050219](pic/6.png)
 
 ###### reducer_c0.py
 
@@ -550,7 +550,7 @@ hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
 -output ./c0/output4
 ```
 
-![1633662094692](pic\7.png)
+![1633662094692](pic/7.png)
 
 ##### b. Step2 - count the number
 
@@ -621,7 +621,7 @@ hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
 hdfs dfs -cat ./c1/output5/*
 ```
 
-![1633662854545](C:\Users\Jaden\AppData\Roaming\Typora\typora-user-images\1633662854545.png)
+![1633662854545](pic/1633662854545.png)
 
 #### 4.Homework1_d
 
@@ -695,9 +695,9 @@ hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
 -output ./e1/output6
 ```
 
-![1633667447803](pic\8.png)
+![1633667447803](pic/8.png)
 
-![1633667485964](D:\document\CUHK\Web-scale\homework1\pic\9.png)
+![1633667485964](pic/9.png)
 
 ###### Mapreduce Job_e2
 
@@ -717,9 +717,9 @@ hadoop jar /usr/lib/hadoop-mapreduce/hadoop-streaming.jar \
 -output ./e2/output7
 ```
 
-![1633672112566](pic\10.png)
+![1633672112566](pic/10.png)
 
-![1633672164157](pic\11.png)
+![1633672164157](pic/11.png)
 
 ###### Final Result
 

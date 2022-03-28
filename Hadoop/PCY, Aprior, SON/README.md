@@ -391,7 +391,7 @@ hdfs dfs -rm -r ./hw2/output_b2
 
 ###### Result
 
-![1634899894243](D:\document\CUHK\Web-scale\Homework2\2.png)
+![1634899894243](2.png)
 
 ###### Time compare
 
@@ -403,7 +403,7 @@ MapRecude2 time: 60s
 
 Overall time for task B is 115s.
 
-![1635513439202](D:\document\CUHK\Web-scale\Homework2\5.png)
+![1635513439202](5.png)
 
 #### Question2 (c)
 
@@ -810,7 +810,7 @@ hdfs dfs -rm -r ./hw2/output_c4
 
 ###### Output
 
-![1635063406786](D:\document\CUHK\Web-scale\Homework2\3.png)
+![1635063406786](3.png)
 
 #### Question2 (d)
 
@@ -1058,7 +1058,7 @@ Correction check: the total result of task B and task D is the same, which are 8
 
 ###### Output_d20.txt
 
-![1635065611274](D:\document\CUHK\Web-scale\Homework2\4.png)
+![1635065611274](4.png)
 
 #### Conclusion
 
@@ -1078,7 +1078,7 @@ Due to the use of multiple mapper and reducers, the distributed computing saves 
 
 For task d, the MapReduce1 time is 129s, and the MapReduce2 time is 59s.
 
-![1635066874356](C:\Users\Jaden\AppData\Roaming\Typora\typora-user-images\1635066874356.png)
+![1635066874356](1635066874356.png)
 
 For task b, the MapReduce1 time:  55s, MapRecude2 time: 60s.
 

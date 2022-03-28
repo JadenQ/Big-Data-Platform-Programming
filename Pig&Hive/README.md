@@ -52,7 +52,7 @@ hdfs dfs -copyFromLocal ./* ./hw2
 hdfs dfs -ls ./hw2
 ```
 
-![1646030579944](D:\document\CUHK\Big Data\homework\hw2\pics\1646030579944.png)
+![1646030579944](pics/1646030579944.png)
 
 ###### Join the two tables
 
@@ -82,9 +82,9 @@ hdfs dfs -ls ./hw2
    dump allGram
    ```
 
-![1646032610185](D:\document\CUHK\Big Data\homework\hw2\pics\1646032610185.png)
+![1646032610185](pics/1646032610185.png)
 
-![1646032540458](D:\document\CUHK\Big Data\homework\hw2\pics\1646032540458.png)
+![1646032540458](pics/1646032540458.png)
 
 5. Save to HDFS
 
@@ -92,7 +92,7 @@ hdfs dfs -ls ./hw2
    STORE allGram INTO './hw2/allGram' USING PigStorage (',');
    ```
 
-![1646033823164](D:\document\CUHK\Big Data\homework\hw2\pics\1646033823164.png)
+![1646033823164](pics/1646033823164.png)
 
 ##### c) Average occurrences
 
@@ -127,7 +127,7 @@ pig -x tez hdfs://dicvmd2.ie.cuhk.edu.hk:8020/user/s1155161048/hw2/c1_avgCount.p
 
 Time consumed is 9 min 3s and 657ms.
 
-![1646055862246](D:\document\CUHK\Big Data\homework\hw2\pics\1646055862246.png)
+![1646055862246](pics/1646055862246.png)
 
 ##### d) Top 20
 
@@ -137,7 +137,7 @@ hdfs dfs -get ./hw2/gramAvgCount2
 head -n 30 ./gramAvgCount2/part-v005-o000-r-00000
 ```
 
-![1646630285167](D:\document\CUHK\Big Data\homework\hw2\pics\1646630285167.png)
+![1646630285167](pics/1646630285167.png)
 
 #### Question 2
 
@@ -147,7 +147,7 @@ We assume the Hadoop cluster (Java, Hadoop environment) is established according
 
 The hive-2.3.8 is no longer on apache, hive-2.3.9 is the only option.
 
-<img src="D:\document\CUHK\Big Data\homework\hw2\pics\1646711928910.png" alt="1646711928910" style="zoom:50%;" />
+<img src="pics/1646711928910.png" alt="1646711928910" style="zoom:50%;" />
 
 ###### Download and unzip
 
@@ -188,7 +188,7 @@ export HADOOP_HOME=/usr/local/hadoop
 
 And other configurations:
 
-![1646712778358](C:\Users\Jaden\AppData\Roaming\Typora\typora-user-images\1646712778358.png)
+![1646712778358](pics/1646712778358.png)
 
 Create the /tmp folder and a separate Hive folder in HDFS. Here, I use the /user/hive/warehouse folder. Hive will store its tables on HDFS and those locations needs to be bootstrapped:
 
@@ -220,7 +220,7 @@ LOAD DATA LOCAL INPATH './googlebooks-eng-all-1gram-20120701-b' INTO TABLE table
 CREATE TABLE tableAll AS SELECT * FROM tableA UNION SELECT * FROM tableB;
 ```
 
-![1646396408002](D:\document\CUHK\Big Data\homework\hw2\pics\1646396408002.png)
+![1646396408002](pics/1646396408002.png)
 
 ##### b2) Average occurrences
 
@@ -228,7 +228,7 @@ CREATE TABLE tableAll AS SELECT * FROM tableA UNION SELECT * FROM tableB;
 CREATE TABLE tableAVG AS SELECT bigram, AVG(match_count) AS match_count_avg FROM tableAll GROUP BY bigram;
 ```
 
-![1646446335982](D:\document\CUHK\Big Data\homework\hw2\pics\1646446335982.png)
+![1646446335982](pics/1646446335982.png)
 
 ##### b3) Top20  
 
@@ -237,7 +237,7 @@ CREATE TABLE tableAVGTop AS SELECT * FROM tableAVG ORDER BY match_count_avg DESC
 SELECT * FROM tableAVGTop LIMIT 20;
 ```
 
-![1646447174485](D:\document\CUHK\Big Data\homework\hw2\pics\1646447174485.png)
+![1646447174485](pics/1646447174485.png)
 
 ##### Time Comparison
 
@@ -291,11 +291,11 @@ head -n 10 ./both_watch_3/part-v006-o000-r-00000 # dataset 3 top 10
 head -n 10 ./both_watch_4/part-v006-o000-r-00000 # dataset 4 top 10
 ```
 
-![1646660364607](D:\document\CUHK\Big Data\homework\hw2\pics\1646660364607.png)
+![1646660364607](pics/1646660364607.png)
 
-![1646660218252](D:\document\CUHK\Big Data\homework\hw2\pics\1646660218252.png)
+![1646660218252](pics/1646660218252.png)
 
-![1646660820281](D:\document\CUHK\Big Data\homework\hw2\pics\1646660820281.png)
+![1646660820281](pics/1646660820281.png)
 
 ##### b) Top-K most similar users
 
@@ -412,11 +412,11 @@ pig -x tez hdfs://dicvmd2.ie.cuhk.edu.hk:8020/user/s1155161048/hw2/simi_ID_4.pig
 
 i)
 
-![1646707554085](D:\document\CUHK\Big Data\homework\hw2\pics\1646707554085.png)
+![1646707554085](pics/1646707554085.png)
 
 ii)
 
-![1646707662262](D:\document\CUHK\Big Data\homework\hw2\pics\1646707662262.png)
+![1646707662262](pics/1646707662262.png)
 
 ##### c) Bonus: Use Hive to do b)
 
