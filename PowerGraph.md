@@ -127,3 +127,32 @@ Assign edge randomly. No optimization. Sometimes putting some vertices on the sa
 ###### Greedy
 
 Place the edge on machines which already have the vertices in that edge.
+
+- Derandomization: Greedily minimize the expected number of machines spanned
+- Coordinated edge placement
+  - Requires coordination to place each edge
+  - Slower: higher quality cuts
+- Oblivious Edge placement
+  - *approx*. greddy objective without coordination.
+  - Faster, lower quality cuts
+
+#### PowerGraph System Design
+
+<img src="/pics/1649420161442.png" alt="1649420161442" style="zoom:50%;" />
+
+Fault tolerance: snapshot < 5 seconds in twitter.
+
+##### Implement many algorithms
+
+CF, Statistic inference, Graph analysis, computer vision, language modeling (LDA).
+
+##### Comparison of GraphX and PowerGraph
+
+- PowerGraph
+  - GAS programming model
+  - Vertex-cut partitioning
+- GraphX
+  - Unifying data-parallel and graph-parallel analytics
+  - Vertex-cut partitioning
+  - GraphX is 3,4 times slower than PowerGraph.
+
