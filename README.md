@@ -2,11 +2,11 @@
 
 #### What does it from?
 
-The path following the course from [Prof. Lau Wing-Cheong](https://staff.ie.cuhk.edu.hk/~wclau/), great thanks to his hard work preparing all the big data technology introductions from theory on papers to practical examples, those are really challenge courses but worth it. :heart:
+The path following the course from [Prof. Lau Wing-Cheong](https://staff.ie.cuhk.edu.hk/~wclau/), great thanks to his hard work preparing all the big data technology introductions from theory on papers to practical examples, those are really challenging courses but worth it. :heart:
 
 #### What is it about?
 
-This repository includes my learning path of big data platform programming, including MapReduce and the Hadoop stack, Spark, Spark Streaming, Pig, Hive, setup steps of Hadoop and Spark over Kubernetes, usage of docker. I used database query language, Python, Scala and Shell programming to finish it. :books:
+This repository includes my learning path of big data platform programming, including Hadoop MapReduce stack, Spark, Spark Streaming, Pig, Hive, setup steps of Hadoop and Spark over Kubernetes, usage of docker. I used database query language, Python, Scala and Shell programming to finish it. :books:
 
 #### Future Work?
 
